@@ -21,7 +21,7 @@ body {
     ;
 }
 
-/*________header________*/
+/*________header_________*/
 .header__nav {
     display: flex;
     justify-content: space-between;
