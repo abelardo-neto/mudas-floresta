@@ -1,0 +1,191 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&family=Raleway:ital,wght@0,100..900;1,100..900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+:root {
+    --color-1: #285430;
+    --color-2: #E6D9B6;
+    --color-3: #FEFEFE;
+    --font-color: #272727;
+    --font-1: 'Nunito', sans-serif;
+    --font-2: 'Raleway', sans-serif;
+}
+
+body {
+    box-sizing: border-box;
+    background-color: var(--color-3);
+    color: var(--font-color)
+    ;
+}
+
+/*________header________*/
+.header__nav {
+    display: flex;
+    justify-content: space-between;
+    padding: 2.6% 34% 2.6% 34%;
+    background-color: var(--color-1);
+}
+
+.header__nav__link {
+    text-decoration: none;
+    color: var(--color-3);
+    font-size: 24px;
+    font-weight: 800;
+    font-family: var(--font-1);
+}
+
+.header__nav__link:hover {
+    color: var(--color-2);
+}
+
+.header__intro {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    align-items: center;
+    background-color: var(--color-2);
+    font-family: var(--font-2);
+    color: var(--color-1);
+    padding: 7% 0 7% 0;
+}
+
+.header__intro__title {
+    font-size: 46px;
+}
+
+.header__intro__subtitle {
+    font-size: 27px;   
+}
+
+/*________main________*/
+.main {
+    display: flex;
+    justify-content: space-evenly;
+    font-family: var(--font-2);
+    color: var(--color-1);
+    justify-content: center;
+    align-items: center;
+    gap: 150px;
+    
+}
+
+.main__home {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    font-size: 16px;
+    gap: 10px;
+    letter-spacing: .02rem;
+    padding: 10%;
+}
+
+.main__home__text {
+    font-size: 22px;
+}
+
+.main__image {
+    width: 14%;
+}
+
+/*________about________*/
+.main__about {
+    font-size: 22px;
+    text-align: center;
+    font-weight: 500;
+    padding: 4%;
+}
+
+/*________product________*/
+.main__product {    
+    display: grid;
+    grid-template-rows: 1fr 1fr;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-gap: 50px;
+    margin: 0 auto;
+    align-items: center;
+    justify-items: center;
+    padding:  3%;
+}
+
+.main__product__figure__caption {
+    text-align: center;
+    font-weight: 500;
+    font-size: 22px;
+}
+
+
+.main__product__figure__img {    
+    max-width: 300px;
+    max-height: 200px;
+    width: auto;
+    height: auto;
+    object-fit: fill;
+    justify-items: center; 
+}
+
+/*________contact________*/
+.main__contact {
+    display: flex;
+    text-align: center;
+    padding: 6%;
+    flex-direction: column;
+    gap: 50px;
+}
+
+.main__contact_title {
+    font-size: 24px;
+    font-style: italic;
+    font-weight: 400;
+    color: var(--font-color);
+}
+
+.main__contact_title_list {
+    list-style-type: none;
+    font-size: 22px;
+    font-weight: 800; 
+    justify-items: flex-start;
+    line-height: 30px;
+    color: var(--color-1);
+}
+
+.main__contact_title_list li:first-of-type{
+    color: var(--font-color);
+}
+
+/*________footer________*/
+.footer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: var(--color-1);
+    color: var(--color-3);
+    gap: 40px;
+    font-family: var(--font-2);
+    padding-top: 60px;
+    padding-bottom: 40px;
+}
+
+.footer__thanks {
+    font-size: 28px;
+}
+
+.footer__author {
+    font-style: italic;
+    font-weight: 400;
+    font-size: 18px;
+}
+.footer__link {
+    display: flex;
+    gap: 10px;
+    align-items: center;
+}
+.footer__link__link {
+    font-family: var(--font-1);
+    font-size: 18px;
+    color: var(--color-3);
+    font-weight: 400;
+    font-style: italic;
+}
